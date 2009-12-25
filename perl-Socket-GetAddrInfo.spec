@@ -1,6 +1,5 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.13
-
+%define upstream_version 0.14
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
@@ -9,7 +8,7 @@ Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Socket/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(Module::Build)
