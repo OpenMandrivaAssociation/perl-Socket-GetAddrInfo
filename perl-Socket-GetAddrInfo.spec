@@ -1,5 +1,5 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.14
+%define upstream_version 0.15
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
@@ -11,6 +11,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
+BuildRequires: perl-ExtUtils-CChecker
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl(Scalar::Util)
