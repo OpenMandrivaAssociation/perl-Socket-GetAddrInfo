@@ -1,8 +1,8 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.16
+%define upstream_version 0.17
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
