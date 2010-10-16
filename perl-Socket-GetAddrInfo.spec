@@ -1,5 +1,5 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.18
+%define upstream_version 0.19
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
