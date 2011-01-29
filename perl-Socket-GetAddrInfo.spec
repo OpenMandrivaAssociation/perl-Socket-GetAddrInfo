@@ -1,5 +1,5 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.19
+%define upstream_version 0.20
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
@@ -21,6 +21,8 @@ BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl-devel
 BuildRequires: perl-Test-Warn
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+#gw for getaddrinfo:
+Conflicts: ruli-tools
 
 %description
 The RFC 2553 functions 'getaddrinfo' and 'getnameinfo' provide an
@@ -70,6 +72,9 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc Changes LICENSE README
 %{_mandir}/man3/*
+%{_mandir}/man1/*
 %perl_vendorlib/*
+%_bindir/getaddrinfo
+%_bindir/getnameinfo
 
 
