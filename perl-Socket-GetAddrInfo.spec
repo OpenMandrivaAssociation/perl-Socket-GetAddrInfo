@@ -78,3 +78,70 @@ rm -rf %buildroot
 %_bindir/getnameinfo
 
 
+
+
+%changelog
+* Mon Jun 04 2012 Götz Waschk <waschk@mandriva.org> 0.220.0-1
++ Revision: 802297
+- update to new version 0.22
+
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.210.0-2
++ Revision: 768358
+- mass rebuild of perl extensions against perl 5.14.2
+
+* Fri Apr 22 2011 Götz Waschk <waschk@mandriva.org> 0.210.0-1
++ Revision: 656659
+- update to new version 0.21
+
+* Sat Jan 29 2011 Götz Waschk <waschk@mandriva.org> 0.200.0-1
++ Revision: 633864
+- new version
+- update file list
+- add conflict with ruli-tools
+
+* Sat Oct 16 2010 Götz Waschk <waschk@mandriva.org> 0.190.0-1mdv2011.0
++ Revision: 585999
+- update to new version 0.19
+
+* Thu Sep 16 2010 Götz Waschk <waschk@mandriva.org> 0.180.0-1mdv2011.0
++ Revision: 578820
+- update to new version 0.18
+
+* Wed Sep 15 2010 Götz Waschk <waschk@mandriva.org> 0.170.0-1mdv2011.0
++ Revision: 578427
+- update to new version 0.17
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 0.160.0-2mdv2011.0
++ Revision: 556145
+- rebuild for perl 5.12
+
+* Fri Jul 16 2010 Jérôme Quelin <jquelin@mandriva.org> 0.160.0-1mdv2011.0
++ Revision: 553974
+- update to 0.16
+
+* Sat Jan 30 2010 Götz Waschk <waschk@mandriva.org> 0.150.0-1mdv2010.1
++ Revision: 498481
+- new version
+- update deps
+
+* Fri Dec 25 2009 Götz Waschk <waschk@mandriva.org> 0.140.0-1mdv2010.1
++ Revision: 482201
+- new version
+- fix source URL
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - update to 0.13
+
+* Mon Sep 14 2009 Götz Waschk <waschk@mandriva.org> 0.130.0-1mdv2010.0
++ Revision: 439392
+- update build deps
+- update to new version 0.13
+
+* Mon Jun 29 2009 Götz Waschk <waschk@mandriva.org> 0.120.0-1mdv2010.0
++ Revision: 390466
+- import perl-Socket-GetAddrInfo
+
+
+* Mon Jun 29 2009 cpan2dist 0.12-1mdv
+- initial mdv release, generated with cpan2dist
+
