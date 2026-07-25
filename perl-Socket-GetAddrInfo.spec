@@ -4,14 +4,14 @@
 %define debug_package %{nil}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %{upstream_version}
+Release:	4
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Socket-GetAddrInfo
+Source0:    https://cpan.metacpan.org/authors/id/P/PE/PEVANS/Socket-GetAddrInfo-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::CBuilder)
