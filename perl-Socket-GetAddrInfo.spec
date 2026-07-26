@@ -1,17 +1,15 @@
 %define upstream_name    Socket-GetAddrInfo
-%define upstream_version 0.22
-
 %define debug_package %{nil}
 
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	4
+Version:    0.22
+Release:	5
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Socket-GetAddrInfo
-Source0:    https://cpan.metacpan.org/authors/id/P/PE/PEVANS/Socket-GetAddrInfo-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/P/PE/PEVANS/Socket-GetAddrInfo-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::CBuilder)
@@ -55,7 +53,7 @@ possible to emulate using the legacy resolvers. See below for details on
 the limits of this emulation.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
