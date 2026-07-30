@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.22
-Release:	3
+Release:	4
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
@@ -57,7 +57,7 @@ the limits of this emulation.
 %setup -q -n Socket-GetAddrInfo-0.22
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
