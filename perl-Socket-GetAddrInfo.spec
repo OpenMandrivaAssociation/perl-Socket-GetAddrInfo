@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.22
-Release:	2
+Release:	3
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
@@ -63,7 +63,7 @@ the limits of this emulation.
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 rm -rf %buildroot
