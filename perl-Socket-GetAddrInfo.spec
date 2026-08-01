@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.22
-Release:	4
+Release:	5
 
 Summary:    RFC 2553's C<getaddrinfo> and C<getnameinfo>
 License:    GPL+ or Artistic
